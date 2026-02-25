@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Artools - Precision Series</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/tailwind.config.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="antialiased selection:bg-stone-800 selection:text-white">
+
+    <div class="noise"></div>
+
+    <!-- Main Pinned Section -->
+    <div id="hero-section" class="relative w-full h-screen overflow-hidden bg-[#EAEAE5]">
+
+        <!-- Header -->
+        <header
+            class="absolute top-0 left-0 w-full z-50 px-8 md:px-16 py-8 flex justify-between items-center reveal-fade">
+            <!-- Logo -->
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 flex items-center justify-center bg-stone-900 text-white rounded-sm">
+                    <iconify-icon icon="solar:pen-bold-duotone" class="text-xl"></iconify-icon>
+                </div>
+                <span class="font-display font-medium tracking-tight text-lg text-stone-900">ARTOOLS</span>
+            </div>
+
+            <!-- Menu -->
+            <nav class="hidden md:flex gap-12 font-mono text-xs uppercase tracking-widest text-stone-500">
+                <a href="#hero-section" class="hover:text-stone-900 transition-colors">Produto</a>
+                <a href="#engenharia-section" class="hover:text-stone-900 transition-colors">Tecnologia</a>
+                <a href="#experiencia-section" class="hover:text-stone-900 transition-colors">Benefícios</a>
+            </nav>
+
+            <!-- Theme Toggle -->
+            <button
+                class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-stone-200 text-stone-900 transition-colors">
+                <iconify-icon icon="solar:moon-linear" class="text-xl"></iconify-icon>
+            </button>
+        </header>
+
+        <!-- Main Content -->
+        <div class="absolute inset-0 z-40 grid grid-cols-1 md:grid-cols-12 pointer-events-none">
+
+            <!-- Left Column: Text Content -->
+            <div
+                class="col-span-1 md:col-span-7 h-full flex flex-col justify-center px-8 md:px-16 pointer-events-auto mt-10 md:mt-0">
+
+                <div class="reveal-text overflow-hidden mb-8">
+                    <span
+                        class="inline-flex items-center gap-3 text-xs font-mono uppercase tracking-widest text-stone-500 font-semibold">
+                        <span class="w-6 h-[2px] bg-stone-900"></span>
+                        Precision Series
+                    </span>
+                </div>
+
+                <h1
+                    class="font-display text-6xl md:text-8xl font-bold tracking-tighter leading-[0.9] mb-8 uppercase max-w-2xl text-stone-900 relative z-20">
+                    <div class="reveal-text overflow-hidden">A caneta mais</div>
+                    <div class="reveal-text overflow-hidden"><span class="text-stroke">tecnológica</span></div>
+                    <div class="reveal-text overflow-hidden">do mundo.</div>
+                </h1>
+
+                <p
+                    class="text-stone-600 text-lg md:text-xl font-light leading-relaxed mb-12 max-w-lg reveal-fade text-balance">
+                    Uma fusão impecável entre engenharia de precisão e design atemporal.
+                    Revolucionamos a forma como você expressa suas ideias no papel e no digital.
+                </p>
+
+                <!-- Buttons -->
+                <div class="flex flex-wrap gap-4 reveal-fade">
+                    <button
+                        class="px-8 py-4 bg-stone-900 text-white font-mono text-xs uppercase tracking-widest hover:bg-stone-700 hover:-translate-y-1 transition-all shadow-xl shadow-stone-900/20 rounded-sm">
+                        Comprar Agora
+                    </button>
+                    <button
+                        class="group px-8 py-4 border border-stone-300 text-stone-900 font-mono text-xs uppercase tracking-widest flex items-center gap-3 hover:bg-white transition-all rounded-sm">
+                        Explorar
+                        <iconify-icon icon="solar:arrow-right-linear"
+                            class="text-base group-hover:translate-x-1 transition-transform"></iconify-icon>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Right Column: Pagination Layout -->
+            <div
+                class="hidden md:flex col-span-1 md:col-span-5 h-full flex-col justify-end items-end px-16 py-16 pointer-events-auto">
+                <div class="flex flex-col items-center gap-6 reveal-fade">
+                    <span class="text-xs font-mono tracking-widest text-stone-500">01</span>
+                    <div class="w-[1px] h-24 bg-gradient-to-b from-stone-400 to-transparent"></div>
+                    <button
+                        class="flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-stone-500 hover:text-stone-900 transition-colors group">
+                        <iconify-icon icon="solar:arrow-up-linear"
+                            class="text-base group-hover:-translate-y-1 transition-transform"></iconify-icon>
+                        Prev
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Video Area (Right Side, Behind Content) -->
+        <div
+            class="absolute inset-0 md:left-[35%] w-full md:w-[65%] h-full z-10 flex items-center justify-center video-mask pointer-events-auto overflow-hidden">
+            <video id="hero-video" class="w-full h-full object-cover reveal-video scale-110" muted playsinline
+                preload="auto" src="assets/raw_files/Cinematic_product_showcase_1080p_20260224145.mp4">
+            </video>
+
+        </div>
+
+    </div>
+
+    <!-- 2nd Fold: Architecture & Features -->
+    <section id="engenharia-section"
+        class="relative z-20 bg-[#0a0a09] text-white border-t border-stone-800 py-24 md:py-32 overflow-hidden">
+        <!-- Dark Noise & Grid -->
+        <div class="absolute inset-0 bg-grid-dark pointer-events-none"></div>
+
+        <div class="max-w-[1440px] mx-auto px-8 md:px-16 relative z-10">
+            <!-- Header Text -->
+            <div class="max-w-3xl mb-16 md:mb-24 reveal-fade">
+                <div class="flex items-center gap-2 mb-6 opacity-60">
+                    <iconify-icon icon="solar:target-linear" class="text-stone-300 text-xl"></iconify-icon>
+                    <span class="text-xs font-mono text-stone-300 tracking-widest">137 / 188</span>
+                </div>
+                <h2 class="text-5xl md:text-6xl lg:text-7xl font-display font-medium tracking-tight mb-8 leading-tight">
+                    Engenharia de <br /><span class="text-stone-400">Precisão</span>
+                </h2>
+                <p class="text-stone-400 text-lg md:text-xl font-light leading-relaxed max-w-2xl text-balance">
+                    Nossa arquitetura proprietária processa os gestos e converte vetores analógicos para o meio digital
+                    em frações de milissegundos. Construída sob uma matriz de titânio aeroespacial para criatividade
+                    irrestrita.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24 items-center pl-0 md:pl-12">
+
+                <!-- Left: Product Image Card -->
+                <div class="relative w-full aspect-square md:aspect-[4/5] bg-[#141211] border border-[#292524] rounded-3xl overflow-hidden reveal-fade flex flex-col items-center justify-center group shadow-2xl p-4 md:p-8"
+                    style="transition-delay: 200ms;">
+                    <!-- Subtle Glow from Image -->
+                    <div
+                        class="absolute inset-0 bg-gradient-to-tr from-[#292524]/60 to-transparent opacity-50 group-hover:opacity-100 transition-opacity duration-700 z-0">
+                    </div>
+
+                    <img src="assets/raw_files/611i4j74cnL.png" alt="Artools Precision Series Pen Detail"
+                        class="relative z-10 w-full h-full object-cover rounded-2xl md:rounded-xl shadow-[0_0_50px_rgba(0,0,0,0.5)] transition-transform duration-1000 group-hover:scale-105" />
+
+                    <!-- Tech overlay decoration -->
+                    <div
+                        class="absolute bottom-10 right-10 text-[10px] font-mono text-stone-500 uppercase tracking-widest bg-[#0a0a09]/80 backdrop-blur-sm px-3 py-1.5 rounded-sm border border-stone-800 z-20 animate-float">
+                        Fig. <span class="text-stone-300">01</span>
+                    </div>
+                </div>
+
+                <!-- Right: Content List -->
+                <div class="flex flex-col space-y-12 relative pt-12 md:pt-0">
+
+
+
+                    <!-- Item 1 -->
+                    <div class="flex gap-6 items-start reveal-fade">
+                        <div
+                            class="w-12 h-12 shrink-0 rounded-full bg-[#1c1917] border border-[#292524] flex items-center justify-center font-mono text-sm text-stone-400 group hover:border-[#E85D38] transition-colors cursor-default">
+                            01</div>
+                        <div class="pt-2">
+                            <h3 class="font-display text-xl md:text-2xl text-stone-100 mb-3 font-medium tracking-tight">
+                                Processamento na Borda</h3>
+                            <p class="text-stone-400 text-sm md:text-base leading-relaxed">
+                                A lógica vetorial é executada diretamente no microchip da caneta, com garantia
+                                irrestrita de latência máxima de <span
+                                    class="px-1.5 py-0.5 rounded bg-[#1c1917] text-xs font-mono border border-[#292524] text-stone-300 ml-1">2ms</span>.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="flex gap-6 items-start reveal-fade">
+                        <div
+                            class="w-12 h-12 shrink-0 rounded-full bg-[#1c1917] border border-[#292524] flex items-center justify-center font-mono text-sm text-stone-400 group hover:border-[#E85D38] transition-colors cursor-default">
+                            02</div>
+                        <div class="pt-2">
+                            <h3 class="font-display text-xl md:text-2xl text-stone-100 mb-3 font-medium tracking-tight">
+                                Replicação Atômica</h3>
+                            <p class="text-stone-400 text-sm md:text-base leading-relaxed">
+                                Seus esboços físicos e anotações são espelhados de forma síncrona nos dispositivos
+                                conectados. A IA integrada resolve pequenos desvios de angulação com precisão cirúrgica.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="flex gap-6 items-start reveal-fade">
+                        <div
+                            class="w-12 h-12 shrink-0 rounded-full bg-[#1c1917] border border-[#292524] flex items-center justify-center font-mono text-sm text-stone-400 group hover:border-[#E85D38] transition-colors cursor-default">
+                            03</div>
+                        <div class="pt-2">
+                            <h3 class="font-display text-xl md:text-2xl text-stone-100 mb-3 font-medium tracking-tight">
+                                Bateria Cinética Infinita</h3>
+                            <p class="text-stone-400 text-sm md:text-base leading-relaxed">
+                                Uma matriz inteligente captura e redireciona a energia dos movimentos rítmicos da sua
+                                mão para recarregar as células internamente. Autonomia perpétua e arquitetura de tempo
+                                inativo nulo.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 3rd Fold: Creator Experience / Fluidity -->
+    <section id="experiencia-section"
+        class="relative z-20 bg-[#EAEAE5] border-t border-stone-300 py-24 md:py-32 overflow-hidden">
+        <div class="max-w-[1440px] mx-auto px-8 md:px-16 relative">
+
+            <!-- Marquee Divider (From Design System) -->
+            <div
+                class="absolute top-0 left-0 w-full border-b border-stone-300 bg-stone-100/50 py-4 overflow-hidden z-10">
+                <div class="animate-marquee-reverse whitespace-nowrap flex will-change-transform">
+                    <!-- Repeated marquee for seamless loop -->
+                    <span class="mx-8 text-xs font-mono uppercase tracking-widest text-stone-400">Fluxo
+                        Criativo</span><span
+                        class="mx-8 text-xs font-mono uppercase tracking-widest text-stone-400">★</span>
+                    <span class="mx-8 text-xs font-mono uppercase tracking-widest text-stone-400">Atrito
+                        Zero</span><span
+                        class="mx-8 text-xs font-mono uppercase tracking-widest text-stone-400">★</span>
+                    <span class="mx-8 text-xs font-mono uppercase tracking-widest text-stone-400">Sensibilidade
+                        Tátil</span><span
+                        class="mx-8 text-xs font-mono uppercase tracking-widest text-stone-400">★</span>
+                    <span class="mx-8 text-xs font-mono uppercase tracking-widest text-stone-400">12K Pontos de
+                        Pressão</span><span
+                        class="mx-8 text-xs font-mono uppercase tracking-widest text-stone-400">★</span>
+                    <span class="mx-8 text-xs font-mono uppercase tracking-widest text-stone-400">Fluxo
+                        Criativo</span><span
+                        class="mx-8 text-xs font-mono uppercase tracking-widest text-stone-400">★</span>
+                    <span class="mx-8 text-xs font-mono uppercase tracking-widest text-stone-400">Atrito
+                        Zero</span><span
+                        class="mx-8 text-xs font-mono uppercase tracking-widest text-stone-400">★</span>
+                    <span class="mx-8 text-xs font-mono uppercase tracking-widest text-stone-400">Sensibilidade
+                        Tátil</span><span
+                        class="mx-8 text-xs font-mono uppercase tracking-widest text-stone-400">★</span>
+                </div>
+            </div>
+
+            <!-- Content Area -->
+            <div class="pt-24 grid grid-cols-1 lg:grid-cols-12 gap-16">
+                <!-- Title & Context -->
+                <div class="col-span-1 lg:col-span-5 flex flex-col justify-center reveal-fade">
+                    <div class="inline-flex items-center gap-2 mb-8">
+                        <span class="w-2 h-2 bg-stone-900 rounded-full animate-pulse"></span>
+                        <span class="text-xs font-mono uppercase tracking-widest text-stone-500">Para Criadores</span>
+                    </div>
+                    <h2
+                        class="text-5xl md:text-6xl font-display font-medium tracking-tight mb-8 text-stone-900 leading-[1.1] duration-1000 delay-200">
+                        Pense.<br />E a tinta <span class="italic font-normal text-stone-500">flui.</span>
+                    </h2>
+                    <p class="text-stone-600 text-lg md:text-xl font-light leading-relaxed mb-10 text-balance">
+                        Não existe curva de aprendizado. Nós removemos a barreira entre a tela de vidro e a sensação
+                        orgânica do papel tátil. Desenhe, assine e esculpa com 12.000 níveis independentes de pressão.
+                    </p>
+                    <button
+                        class="w-fit px-8 py-4 border border-stone-900 text-stone-900 font-mono text-xs uppercase tracking-widest hover:bg-stone-900 hover:text-white transition-all rounded-sm flex items-center gap-3 group">
+                        Ver Compatibilidade
+                        <iconify-icon icon="solar:arrow-right-linear"
+                            class="text-base group-hover:translate-x-1 transition-transform"></iconify-icon>
+                    </button>
+                </div>
+
+                <!-- Glass Cards Grid -->
+                <div class="col-span-1 lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6 relative">
+                    <div
+                        class="absolute -top-10 -right-10 w-64 h-64 bg-stone-300 rounded-full blur-3xl opacity-30 pointer-events-none">
+                    </div>
+
+                    <div
+                        class="p-8 rounded-xl bg-white/60 backdrop-blur-md border border-white/80 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-500 group reveal-fade">
+                        <div
+                            class="w-12 h-12 bg-stone-900 rounded-full flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform">
+                            <iconify-icon icon="solar:pen-new-square-bold-duotone" class="text-xl"></iconify-icon>
+                        </div>
+                        <h4 class="text-xl font-display font-medium mb-3 text-stone-900">Ponta Polimérica</h4>
+                        <p class="text-sm text-stone-500 leading-relaxed mb-6">
+                            Micro-hastes flexíveis criam atrito programado idêntico à grafite 0.5mm, acabando com a
+                            sensação de escorregamento no vidro.
+                        </p>
+                    </div>
+
+                    <div
+                        class="p-8 rounded-xl bg-white/60 backdrop-blur-md border border-white/80 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-500 group reveal-fade delay-100 mt-0 sm:mt-12">
+                        <div
+                            class="w-12 h-12 bg-stone-200 rounded-full flex items-center justify-center text-stone-900 mb-6 group-hover:scale-110 transition-transform">
+                            <iconify-icon icon="solar:magic-stick-3-bold-duotone" class="text-xl"></iconify-icon>
+                        </div>
+                        <h4 class="text-xl font-display font-medium mb-3 text-stone-900">Rejeição de Palma IA</h4>
+                        <p class="text-sm text-stone-500 leading-relaxed mb-6">
+                            Rede neural embarcada diferencia o suor e o peso da sua mão da ponta da caneta. Apoie-se na
+                            tela sem medo.
+                        </p>
+                    </div>
+
+                    <div
+                        class="sm:col-span-2 group relative overflow-hidden rounded-xl bg-stone-900 flex items-center justify-between p-8 md:p-12 shadow-2xl reveal-fade delay-200">
+                        <div class="relative z-10 max-w-sm">
+                            <span
+                                class="inline-block px-3 py-1 border border-stone-600 rounded-sm text-stone-300 text-[10px] font-mono uppercase tracking-widest mb-4">Atualizações
+                                OTA</span>
+                            <h4 class="text-white font-display text-3xl md:text-4xl mb-3 tracking-tighter">O sistema
+                                evolui.</h4>
+                            <p class="text-stone-400 text-sm md:text-base leading-relaxed">
+                                Firmware atualizado continuamente durante o carregamento noturno. Sua caneta fica mais
+                                precisa a cada mês através de Machine Learning de calibração.
+                            </p>
+                        </div>
+                        <div class="absolute right-0 top-0 h-full w-1/2 opacity-30 md:opacity-50 pointer-events-none">
+                            <svg class="absolute inset-0 w-full h-full text-stone-500" viewBox="0 0 100 100"
+                                preserveAspectRatio="none">
+                                <path fill="none" stroke="currentColor" stroke-width="0.5"
+                                    d="M0,50 Q25,10 50,50 T100,50" opacity="0.3"></path>
+                                <path fill="none" stroke="currentColor" stroke-width="0.5"
+                                    d="M0,60 Q25,20 50,60 T100,60" opacity="0.5"></path>
+                                <path fill="none" stroke="currentColor" stroke-width="0.5"
+                                    d="M0,70 Q25,30 50,70 T100,70" opacity="0.8"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4th Fold: The Glow Highlight -->
+    <section
+        class="relative w-full h-screen flex items-center justify-center overflow-hidden bg-black z-30 border-t border-stone-800">
+        <!-- Background Video Loop -->
+        <video class="absolute inset-0 w-full h-full object-cover opacity-30 mix-blend-screen pointer-events-none"
+            autoplay muted loop playsinline src="assets/raw_files/Cinematic_product_showcase_1080p_20260224145.mp4">
+        </video>
+        <!-- Overlay Gradient for contrast -->
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-black pointer-events-none"></div>
+
+        <!-- The Glowing Highlight Box -->
+        <div
+            class="group relative z-10 flex flex-col items-center justify-center max-w-lg w-full px-6 reveal-fade animate-float">
+
+            <!-- Outer Glow (Soft blur around) -->
+            <div
+                class="absolute -inset-2 bg-white/10 opacity-0 group-hover:opacity-100 transition duration-1000 rounded-3xl blur-2xl pointer-events-none">
+            </div>
+
+            <!-- Border Gradient Mask Box -->
+            <div class="relative w-full bg-black/40 backdrop-blur-xl p-10 md:p-16 rounded-3xl text-center shadow-[0_0_80px_rgba(0,0,0,0.8)] flex flex-col items-center transform transition-transform duration-700 group-hover:scale-[1.02]"
+                style="--border-gradient: linear-gradient(135deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.02)); --border-radius-before: 24px;">
+
+                <div
+                    class="w-16 h-16 rounded-full bg-gradient-to-br from-white/10 to-transparent flex items-center justify-center mb-6 ring-1 ring-white/20 shadow-inner">
+                    <iconify-icon icon="solar:stars-minimalistic-bold-duotone"
+                        class="text-3xl text-white"></iconify-icon>
+                </div>
+
+                <h3 class="text-4xl md:text-5xl font-display font-medium text-white mb-6 tracking-tight drop-shadow-md">
+                    Aura Premium</h3>
+                <p class="text-stone-400 font-light leading-relaxed mb-10 text-sm md:text-base text-balance">
+                    Uma fusão magistral de design limpo e motion fluído.<br />Cumpra sua promessa e encante no primeiro
+                    clique.
+                </p>
+
+                <!-- Glowing Beam Button -->
+                <button
+                    class="group/btn relative flex items-center justify-center overflow-hidden rounded-full p-[1px] leading-none transition-transform hover:scale-105 active:scale-95">
+                    <span
+                        class="absolute inset-[-1000%] animate-[spin_3s_linear_infinite] bg-[conic-gradient(from_0deg,transparent_0_340deg,rgba(255,255,255,0.8)_360deg)]"></span>
+                    <span
+                        class="relative flex h-full w-full items-center rounded-full bg-[#0a0a09] pt-4 pr-8 pb-4 pl-8 ring-1 ring-white/10">
+                        <span class="absolute inset-0 overflow-hidden rounded-full">
+                            <span
+                                class="absolute top-0 left-0 h-full w-full -skew-x-12 bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 group-hover/btn:animate-[shimmer_1.5s_infinite] group-hover/btn:opacity-100"></span>
+                        </span>
+                        <span
+                            class="relative z-10 text-xs font-mono tracking-widest uppercase text-white font-medium">Garanta
+                            a Sua</span>
+                        <iconify-icon icon="solar:arrow-right-linear"
+                            class="relative z-10 text-base text-stone-400 ml-3 group-hover/btn:translate-x-1 transition-transform group-hover/btn:text-white"></iconify-icon>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Space -->
+    <div class="h-32 bg-[#EAEAE5] flex flex-col items-center justify-end pb-8 relative z-20">
+        <p class="font-mono text-stone-400 uppercase tracking-widest text-[10px]">Aura System v2.0 - Precision Series
+            2026</p>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- App Script -->
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
